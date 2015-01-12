@@ -1,0 +1,36 @@
+body {
+    padding-top: 50px; 
+}
+
+.business-header {
+    height: 300px;
+    background: url("students.jpg") center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.tagline {
+    text-shadow: 0 0 10px #000;
+    color: #fff;
+}
+
+.col-sm-4
+{
+	width: 50%; 
+}
+.img-center {
+    margin: 0 auto; 
+	border-width: 10px;
+}
+
+.bio{
+	margin-left: 75px; 
+	margin-right: 55px;
+}
+
+
+footer {
+    margin: 50px 0;
+}

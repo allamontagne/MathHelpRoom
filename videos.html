@@ -1,0 +1,156 @@
+<html> 
+	<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>MHR - Videos</title>
+
+    <link href="min.css" rel="stylesheet"> 
+    <link href="video.css" rel="stylesheet">
+</head>
+
+<body>
+	    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">UC Math Help Room</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="about.html">Hours</a>
+                    </li>
+                    <li>
+                        <a href="meet.html">Meet the Tutors</a>
+                    </li>
+                    <li>
+                        <a href="videos.html">Videos</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+	    <header class="business-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="tagline">Math Help Room - Videos</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+	
+	<br>
+<div class = "container">
+	<div class="row">
+            <div class="col-sm-8">
+                <h2>Extra Content</h2>
+				<p> </p>
+				<p>With the growing popularity of video sharing sites, some professors in the Math/CS Department has begun recording bonus videos for their classes. These videos range from introductions to topics (meant to be watched before class), reviewing topics covered in class, and also completing longer problems to serve as examples.</p>
+                
+				<p>Below are a sample of the videos available. Feel free to scroll down and browse, or search for a specific video in the bar below. To see all content, visit our  <a href="https://www.youtube.com/user/UrsinusMath/feed">YouTube channel</a>. </p>
+				
+				
+
+            </div>
+	</div>
+
+<div class = "search">
+	<!-- Search Feature -->
+	<script>
+		<!-- Search for a specific video by title -->
+		function showHint(str)
+		{
+		var xmlhttp;
+		if (str.length==0)
+		  { 
+		  document.getElementById("txtHint").innerHTML="";
+		  return;
+		  }
+		if (window.XMLHttpRequest)
+		  {// code for IE7+, Firefox, Chrome, Opera, Safari
+		  xmlhttp=new XMLHttpRequest();
+		  }
+		else
+		  {// code for IE6, IE5
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		  }
+		xmlhttp.onreadystatechange=function()
+		  {
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{
+			document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+			}
+		  }
+		xmlhttp.open("GET","videos.php?q="+str,true);
+		xmlhttp.send();
+		}
+	</script>
+	
+<form action=""> 
+	Search: <input type="text" id="txt1" onkeyup="showHint(this.value)" />
+</form>
+	<p>Suggestions: <span id="txtHint"></span></p> 
+	
+</div>
+	
+	<br><br><br>
+	
+	<!-- Displayed Videos -->
+	<h3>Math 112 - Calculus II</h3> 
+	<br>
+	
+	<h4>8.1 Intro to Sequences</h4>
+	<video width = "700" height = "400" controls>
+		<source src = "Ch 8.1 - Intro sequences.mp4">
+	</video>
+	
+	<br><br><br>
+	
+	<h4>8.1 Problem 53</h4>
+	<video width = "700" height = "400" controls>
+		<source src = "Ch 8.1 - Wrap up - Prob 53.mp4">
+	</video>
+
+	<br><br><br>
+	
+		<h4>8.2 Limits of Sequences </h4>
+	<video width = "700" height = "400" controls>
+		<source src = "Ch 8.2 - Limites of sequences.mp4">
+	</video>
+	
+		
+	<!-- Footer -->
+        <footer>
+			
+            <div class="row">
+                <div class="col-lg-12">
+					
+                    <p><center>Alexa LaMontagne - Fall 2014</center></p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+        </footer>
+	
+</body>
+
+
+
+
+</html> 
